@@ -56,10 +56,8 @@ const AccountsOverview = () => {
     <div className="bg-white w-full px-4 sm:px-10">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 py-6">
 
-        {/* LEFT MAIN CARD */}
         <div className="lg:col-span-2 bg-white rounded-2xl shadow-xl border-t-2 border-[#00A6CA] p-4 sm:p-6">
           
-          {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
             <div className="flex items-center gap-2">
               <h3 className="text-base font-semibold text-[#046899]">
@@ -85,10 +83,8 @@ const AccountsOverview = () => {
             </div>
           </div>
 
-          {/* Pie + Legend */}
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
 
-            {/* Pie */}
             <div className="relative w-48 h-48 sm:w-56 sm:h-56 flex-shrink-0">
               <Pie data={data} options={options} />
               <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -97,7 +93,6 @@ const AccountsOverview = () => {
               </div>
             </div>
 
-            {/* Legend */}
             <div className="flex flex-col space-y-5 w-full max-w-sm">
               {filteredAccounts.map(({ label, value, color }) => (
                 <div
@@ -123,10 +118,8 @@ const AccountsOverview = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE CARDS */}
         <div className="flex flex-col gap-6">
 
-          {/* Disputes */}
           <div className="flex rounded-2xl border-t-2 border-[#7CC6DD] overflow-hidden bg-white shadow-sm">
             <div className="w-14 sm:w-16 bg-blue-50 flex items-start justify-center pt-6">
               <img src={warnigImg} className="w-5 h-5" />
@@ -150,7 +143,6 @@ const AccountsOverview = () => {
             </div>
           </div>
 
-          {/* Enquiries */}
           <div className="flex rounded-2xl border-t-2 border-[#7CC6DD] overflow-hidden bg-white shadow-sm">
             <div className="w-14 sm:w-16 bg-blue-50 flex items-start justify-center pt-6">
               <img src={refrence} className="w-5 h-5" />

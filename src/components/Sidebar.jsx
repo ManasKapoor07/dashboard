@@ -111,7 +111,7 @@ const Sidebar = () => {
                             key={child}
                             onClick={() => {
                               setActiveChild(child);
-                              setIsSidebarOpen(false); // close on mobile
+                              setIsSidebarOpen(false); 
                             }}
                             className={`cursor-pointer ${
                               isActive

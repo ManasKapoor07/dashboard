@@ -37,7 +37,6 @@ const Stand = ({ score }) => {
       <div className="bg-[#F7F9FA] rounded-xl p-3 sm:p-6">
         <div className="bg-white p-4 sm:p-6 rounded-xl">
           
-          {/* BAR + MARKER */}
           <div className="relative">
             <div className="flex h-10 sm:h-16 rounded-lg overflow-hidden text-xs sm:text-lg font-semibold">
               {SEGMENTS.map(seg => (
@@ -76,7 +75,6 @@ const Stand = ({ score }) => {
             )}
           </div>
 
-          {/* SCORE */}
           <div className="text-center mt-4 sm:mt-6">
             <p className="text-xs sm:text-base font-medium text-gray-700">
               Your NB Score
@@ -88,7 +86,6 @@ const Stand = ({ score }) => {
 
           <hr className="my-3 sm:my-4 opacity-15" />
 
-          {/* LEGEND */}
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6 text-xs sm:text-base text-gray-700">
             <span className="font-normal text-[#262626]">
               Score Range
@@ -111,7 +108,6 @@ const Stand = ({ score }) => {
           </div>
         </div>
 
-        {/* FOOTER */}
         <div className="text-center mt-6 sm:mt-8 text-gray-800">
           {topPercent !== null && (
             <p className="text-sm sm:text-lg">
